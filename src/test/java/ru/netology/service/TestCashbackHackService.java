@@ -33,4 +33,13 @@ public class TestCashbackHackService {
 
         Assert.assertEquals( act, exp ) ;
     }
+
+    @Test
+    public void testCashBackHackerBoundary() { // Передача одинаковой с границей суммы.
+
+        int expected = 0;
+        int actual = cash.remain( 1000 );
+
+        Assert.assertEquals( actual, expected);
+    }
 }
